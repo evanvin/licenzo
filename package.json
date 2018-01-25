@@ -1,14 +1,27 @@
 {
   "name": "licenzo",
-  "version": "1.2.1",
-  "description": "",
+  "version": "1.2.2",
+  "description": "A real driver's license identification generator.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "scripts": {},
+  "author": "Evan Vinciguerra <evan@evan.vin> (http://evan.vin)",
+  "license": "MIT",
   "dependencies": {
-    "soundex": "^0.2.1"
+    "soundex": "0.2.1"
+  },
+  "keywords": [
+    "licenzo",
+    "javascript",
+    "md",
+    "drivers",
+    "license",
+    "state",
+    "driver",
+    "nodejs",
+    "real"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evanvin/licenzo.git"
   }
 }
