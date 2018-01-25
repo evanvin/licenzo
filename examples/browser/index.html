@@ -27,11 +27,11 @@
           <div class="row">
             <div class="one columns"></div>
             <div class="two columns">
-              <label for="firstName">Your email</label>
+              <label for="firstName">First Name</label>
               <input class="u-full-width" type="text" placeholder="Enrique" id="firstName">
             </div>
             <div class="two columns">
-              <label for="middleName">Your email</label>
+              <label for="middleName">Middle Name</label>
               <input class="u-full-width" type="text" placeholder="Miguel" id="middleName">
             </div>
             <div class="two columns">
@@ -76,17 +76,40 @@
           $('#dobMonth').append(opt);
         }
       }
+
+      $('#dobMonth').change(refillDays);
+
+
     });
 
-    function generate(){
-      var fn = $('#firstName').val();
-      var mn = $('#middleName').val();
-      var ln = $('#lastName').val();
-      var dobM = $('#dobMonth').val();
-      var dobD = $('#dobDay').val();
-
-      $('#output').html(licenzo.md.generate(fn,ln,mn,dobM,dobD));
+    function refillDays(){
+      var m = $('#dobMonth').val();
+      var d = $('#dobDay');
+      d.empty();
+      for(var i = 1; i <= new Date(2008, m, 0).getDate(); i++)
+        d.append("<option value=\"" + i + "\">" + i + "</option>");
     }
+
+    function generate(){
+      $('#output').empty();
+      var data = [$('#firstName'), $('#lastName'), $('#middleName'), $('#dobMonth'), $('#dobDay')];
+      var values = [];
+      var pass = true;
+      $.each(data, function(index, value){
+        var v = value.val();
+        if((v !== "" && !isNaN(v) && index < 3) || (v === "" && index != 2)){
+          value.focus();
+          pass = false;
+          return;
+        }
+        values.push(v);
+      });
+      
+      if(pass){
+        $('#output').html(licenzo.md.generate(values[0],values[1],values[2],values[3],values[4]));
+      }
+    }
+
   </script>
 
 </body>

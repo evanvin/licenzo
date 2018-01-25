@@ -11,7 +11,7 @@ A real driver's license identification generator. For now, it is only for Maryla
 
 ## Demo
 
-[https://rawgit.com/evanvin/licenzo/master/examples/browser/index.html](https://rawgit.com/evanvin/licenzo/master/examples/browser/index.html)
+[Demo](https://rawgit.com/evanvin/licenzo/master/examples/browser/index.html)
 
 
 ## Usage
