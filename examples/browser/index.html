@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Licenzo Demo</title>
+  <meta name="description" content="Generates real driver's license #'s for certain states.">
+  <meta name="author" content="Evan Vinciguerra">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src = "js/jquery.js" type = "text/javascript"></script>
+  <script src = "js/licenzo.js" type = "text/javascript"></script>
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve column" style="margin-top: 25%">
+        <h1>Licenzo</h1>
+        <h5>Maryland State License Generator</h5>
+        <p>This form will generate a valid MD driver's license number. This uses the tool from <a target="_blank" href="https://github.com/evanvin/licenzo">evanvin</a>.</p>
+
+        <div class="row">
+          <div class="row">
+            <div class="one columns"></div>
+            <div class="two columns">
+              <label for="firstName">Your email</label>
+              <input class="u-full-width" type="text" placeholder="Enrique" id="firstName">
+            </div>
+            <div class="two columns">
+              <label for="middleName">Your email</label>
+              <input class="u-full-width" type="text" placeholder="Miguel" id="middleName">
+            </div>
+            <div class="two columns">
+              <label for="lastName">Last Name</label>
+              <input class="u-full-width" type="text" placeholder="Iglesias" id="lastName">
+            </div>
+            <div class="two columns">
+              <label for="dobMonth">DOB Month</label>
+              <select class="u-full-width" id="dobMonth">
+              </select>
+            </div>
+            <div class="two columns">
+              <label for="dobDay">DOB Day</label>
+              <select class="u-full-width" id="dobDay">
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="twelve columns" style="text-align:center;">
+              <button type="button" class="button-primary" onclick="generate();">Generate</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="twelve columns" style="text-align:center;">
+            <h3 id="output"></h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function(){
+      for(var i = 1; i <= 31; i++){
+        var opt = "<option value=\"" + i + "\">" + i + "</option>";
+        $('#dobDay').append(opt);
+        if(i < 13){
+          $('#dobMonth').append(opt);
+        }
+      }
+    });
+
+    function generate(){
+      var fn = $('#firstName').val();
+      var mn = $('#middleName').val();
+      var ln = $('#lastName').val();
+      var dobM = $('#dobMonth').val();
+      var dobD = $('#dobDay').val();
+
+      $('#output').html(licenzo.md.generate(fn,ln,mn,dobM,dobD));
+    }
+  </script>
+
+</body>
+</html>
