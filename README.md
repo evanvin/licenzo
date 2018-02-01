@@ -64,5 +64,5 @@ This software uses code from several open source packages.
 
 ## Disclaimer
 I find this information very interesting, but it can be used to do bad things. Like Alan above, I made this project because I am interested in the numbers and structure behind our states driver's license numbers. 
- > ** Using this information to fabricate fake identification is _fraud_! Don't be stupid and use this for greedy reasons. **
+ > **Using this information to fabricate fake identification is _fraud_! Don't be stupid and use this for greedy reasons.**
 
