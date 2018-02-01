@@ -25,6 +25,11 @@ A real driver's license identification generator. For now, it is only for Maryla
     var SantaClaus = licenzo.md.generate("Santa", "Claus", "", "3", "15"); //C-420-758-014-197 (MD Driver's License #)
 
 
+### Run The Test
+	
+	npm test
+
+
 ## Credits
 
 This software uses code from several open source packages.
