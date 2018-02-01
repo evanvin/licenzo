@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "tape ./test/test.js | tap-spec",
-    "ify": "browserify index.js --standalone licenzo > ./examples/browser/js/licenzo.js && minify ./examples/browser/js/licenzo.js"
+    "browserify": "browserify index.js --standalone licenzo > ./examples/browser/js/licenzo.js && minify ./examples/browser/js/licenzo.js",
+    "coverage": "istanbul cover ./test/test.js"
   },
   "author": "Evan Vinciguerra <evan@evan.vin> (http://evan.vin)",
   "license": "MIT",
