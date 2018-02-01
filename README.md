@@ -17,18 +17,34 @@ A real driver's license identification generator. For now, it is only for Maryla
 ## Usage
 
 ### Node.js
+```javascript
+var licenzo = require('licenzo');
 
-    var licenzo = require('licenzo');
+var billNye = licenzo.md.generate("William", "Sanford", "Nye", "11", "27");
+console.log(billNye);		//N-000-887-758-906 (MD Driver's License #)
 
-    var BillNye = licenzo.md.generate("William", "Nye", "Sanford", "11", "27"); //N-000-887-758-906 (MD Driver's License #)
-    var KateHudson = licenzo.md.generate("Kate", "Hudson", "Garry", "4", "19"); //H-325-461-271-303 (MD Driver's License #)
-    var SantaClaus = licenzo.md.generate("Santa", "Claus", "", "3", "15"); //C-420-758-014-197 (MD Driver's License #)
+var kateHudson = licenzo.md.generate("Kate", "Garry", "Hudson", "4", "19");
+console.log(kateHudson);	//H-325-461-271-303 (MD Driver's License #)
+
+var santaClaus = licenzo.md.generate("Santa", "", Claus", "3", "15");
+console.log(santaClaus);	//C-420-758-014-197 (MD Driver's License #)
 
 
-### Run The Test
+var name = licenzo.{state abbreviation}.generate({params}); //format
+```
+
+
+### Testing
 	
 	npm test
 
+
+## Current State Support
+
+- Maryland 
+  - (*firstName*, *middleName*, *lastName*, *dobMonth*, *dobDay*)
+- Washington
+  - (*firstName*, *middleName*, *lastName*, *dobMonth*, *dobDay*, *dobYear*)
 
 ## Credits
 
