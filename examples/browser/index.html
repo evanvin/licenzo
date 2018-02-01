@@ -97,7 +97,7 @@
       var pass = true;
       $.each(data, function(index, value){
         var v = value.val();
-        if((v !== "" && !isNaN(v) && index < 3) || (v === "" && index != 2)){
+        if((v !== "" && !isNaN(v) && index < 3) || (v === "" && index != 1)){
           value.focus();
           pass = false;
           return;
