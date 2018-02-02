@@ -39,6 +39,8 @@ var name = licenzo.{state abbreviation}.generate({params}); //format
 
 ## Current State Support
 
+- Florida
+  - (*firstName*, *middleName*, *lastName*, *dobMonth*, *dobDay*, *dobYear*, *Sex {'M' or 'F'}*)
 - Maryland 
   - (*firstName*, *middleName*, *lastName*, *dobMonth*, *dobDay*)
 - Washington
