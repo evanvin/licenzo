@@ -31,6 +31,15 @@ console.log(santaClaus);	//C-420-758-014-197 (MD Driver's License #)
 var name = licenzo.{state abbreviation}.generate({params}); //format
 ```
 
+### Browser
+```html
+<script src = "licenzo.js" type = "text/javascript"></script>
+<script>
+var md = licenzo.md.generate("William", "Sanford", "Nye", "11", "27");  //N-000-887-758-906
+var wa = licenzo.wa.generate("Lawrence", "", "Tureaud", "5", "21", "1952");  //TUREAL*488K1
+var fl = licenzo.fl.generate("Paul", "William", "Walker", "9", "12", "1973", "M"); //W426-699-73-332-0
+</script>
+```
 
 ### Testing
 	
