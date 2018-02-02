@@ -51,7 +51,7 @@ var fl = licenzo.fl.generate("Paul", "William", "Walker", "9", "12", "1973", "M"
 	npm test
 
 
-## Current State Support
+## States Currently Supported
 
 - Florida
   - (*firstName*, *middleName*, *lastName*, *dobMonth*, *dobDay*, *dobYear*, *Sex {'M' or 'F'}*)
