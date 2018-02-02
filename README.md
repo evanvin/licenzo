@@ -9,7 +9,7 @@ A real driver's license identification generator. For now, it is only for Maryla
   </a>
 </p>
 
-## [Demo](https://cdn.rawgit.com/evanvin/licenzo/6a817bd/examples/browser/index.html)
+## [Demo](https://cdn.rawgit.com/evanvin/licenzo/cebcce4/examples/browser/index.html)
 
 
 ## Usage
