@@ -1,6 +1,11 @@
-# Licenzo
 
-A real driver's license identification generator. For now, it is only for Maryland, but it is structured to be scalable to other states.
+<h1 align="center">
+  <br>
+  <img src="https://raw.githubusercontent.com/evanvin/licenzo/master/examples/browser/img/licenzo.png" alt="Licenzo" width="250">
+  <br>
+</h1>
+
+<h4 align="center">A driver's license identitfication number generator.</h4>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/licenzo">
