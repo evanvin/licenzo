@@ -1,0 +1,4 @@
+{ 
+	"firstName" : {"Albert" : 20, "Alice" : 20, "Ann" : 40, "Anna" : 40, "Anne" : 40, "Annie" : 40, "Arthur" : 40, "Bernard" : 80, "Bette" : 80, "Bettie" : 80, "Betty" : 80, "Carl" : 120, "Catherine" : 120, "Charles" : 140, "Dorthy" : 180, "Edward" : 220, "Elizabeth" : 220, "Florence" : 260, "Donald" : 180, "Clara" : 140, "Frank" : 260, "George" : 300, "Grace" : 300, "Harold" : 340, "Harriet" : 340, "Harry" : 360, "Hazel" : 360, "Helen" : 380, "Henry" : 380, "James" : 440, "Jane" : 440, "Jayne" : 440, "Jean" : 460, "Joan" : 480, "John" : 460, "Joseph" : 480, "Margaret" : 560, "Martin" : 560, "Marvin" : 580, "Mary" : 580, "Melvin" : 600, "Mildred" : 600, "Patricia" : 680, "Paul" : 680, "Richard" : 740, "Robert" : 760, "Ruby" : 740, "Ruth" : 760, "Thelma" : 820, "Thomas" : 820, "Walter" : 900, "Wanda" : 900, "William" : 920, "Wilma" : 920 },
+	"firstInitial" : [0,60,100,160,200,240,280,320,400,420,500,520,540,620,640,660,700,720,780,800,840,860,880,940,960,980]
+}

@@ -14,7 +14,7 @@
   </a>
 </p>
 
-## [Demo](https://cdn.rawgit.com/evanvin/licenzo/cebcce4/examples/browser/index.html)
+## [Demo](https://cdn.rawgit.com/evanvin/licenzo/dcbb473/examples/browser/index.html)
 
 
 ## Usage
@@ -43,6 +43,7 @@ var name = licenzo.{state abbreviation}.generate({params}); //format
 var md = licenzo.md.generate("William", "Sanford", "Nye", "11", "27");  //N-000-887-758-906
 var wa = licenzo.wa.generate("Lawrence", "", "Tureaud", "5", "21", "1952");  //TUREAL*488K1
 var fl = licenzo.fl.generate("Paul", "William", "Walker", "9", "12", "1973", "M"); //W426-699-73-332-0
+var wi = licenzo.wi.generate("Chris", "Crosby", "Farley", "2", "16", "1964", "M"); //F640-1036-4056-00
 </script>
 ```
 
@@ -59,6 +60,8 @@ var fl = licenzo.fl.generate("Paul", "William", "Walker", "9", "12", "1973", "M"
   - (*firstName*, *middleName*, *lastName*, *dobMonth*, *dobDay*)
 - Washington
   - (*firstName*, *middleName*, *lastName*, *dobMonth*, *dobDay*, *dobYear*)
+- Wisconsin
+  - (*firstName*, *middleName*, *lastName*, *dobMonth*, *dobDay*, *dobYear*, *Sex {'M' or 'F'}*)
 
 ## Credits
 

@@ -20,3 +20,8 @@ test('WASHINGTON', function (t) {
 	t.deepEqual('TUREAL*488K1', licenzo.wa.generate("Lawrence", "", "Tureaud", "5", "21", "1952"));
 	t.end();
 });
+
+test('WISCONSIN', function (t) {
+	t.deepEqual('F640-1036-4056-00', licenzo.wi.generate("Chris", "Crosby", "Farley", "2", "16", "1964", "M"));
+	t.end();
+});
