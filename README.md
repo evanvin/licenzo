@@ -68,7 +68,6 @@ var wi = licenzo.wi.generate("Chris", "Crosby", "Farley", "2", "16", "1964", "M"
 This software uses code from several open source packages.
 
 - [Node.js](https://nodejs.org/)
-- [soundex](https://www.npmjs.com/package/soundex) - helper for indexing names by sound using a phonetic algorithm
 - [Alan De Smet](http://www.highprogrammer.com/alan/numbers/index.html) - his site provided helpful information about the formatting and structure of some of these ID's
 
 
